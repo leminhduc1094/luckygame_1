@@ -53,7 +53,7 @@ let can_spin = true;
 function spin() {
     if (can_spin == false){
         swal(
-              "Đáng tiếc",
+              "Tiếc tiếc",
               "Bạn đã hết lượt chơi hôm nay",
               "error"
             );
