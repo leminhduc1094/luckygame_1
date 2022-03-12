@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        log in
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/login.js"></script>
+    <style>
+        body{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav{width: 600px;
+            height: 310px;
+            border: 1px solid steelblue;}
+        #title{height: 60px;
+                background-color: #009999;
+                color: white;
+                display: flex;
+                justify-content: center;
+            }
+        input[type="text"],[type="password"]{width: 366px;
+            height: 35px;
+            border: 1px solid steelblue;
+            padding-left: 30px;
+            margin-right: 15px;
+        }
+        input[type="submit"]{width: 150px;
+                                height: 40px;
+                                background-color: #990000;
+                                color: white;
+                                font-weight: bold;
+                                border: 1px solid red;
+                                margin: 20px 225px;}
+        #bottom{margin: 10px 100px 6px 0;
+                text-align: right;}                
+        a{color: black;}
+        #content{height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;}
+        #divinput{position: relative;}
+        #divinput i{position: relative;
+                left: 25px;
+                color: steelblue;}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="title">
+            <h3>ĐĂNG NHẬP VÀO HỆ THỐNG</h3>
+        </div>
+
+        <div>
+            <div id="content">
+                <div id="divinput">
+                    <i class="fa fa-user"></i>
+                    <input id = "email_input" type="text" placeholder="Tài khoản">
+                </div>
+                <br>
+                <div id="divinput">
+                    <i class="fa fa-lock"></i>
+                    <input id = "pass_input" type="password" placeholder="Mật khẩu">
+                    <br>
+                    <h2 id = 'error_message'></h2>
+                </div>
+                <button onclick="myFunction()" type="submit" >Đăng nhập</button>
+            </div>
+            <div id="bottom">
+                <a href="#">Đăng ký tài khoản</a>
+                /
+                <a href="#">Quên mật khẩu</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
